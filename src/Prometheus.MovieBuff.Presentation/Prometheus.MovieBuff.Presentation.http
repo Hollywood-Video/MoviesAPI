@@ -1,0 +1,6 @@
+@Prometheus.MovieBuff.Presentation_HostAddress = http://localhost:5128
+
+GET {{Prometheus.MovieBuff.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

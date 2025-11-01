@@ -1,0 +1,7 @@
+﻿services:
+  prometheus.moviebuff.presentation:
+    image: prometheus.moviebuff.presentation
+    build:
+      context: .
+      dockerfile: src/Prometheus.MovieBuff.Presentation/Dockerfile
+
