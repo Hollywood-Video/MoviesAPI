@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prometheus.MovieBuff.Domain
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{D5B6461F-301B-4B4B-B2D6-46AE94967810}"
 	ProjectSection(SolutionItems) = preProject
-		docs\README.md = docs\README.md
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prometheus.MovieBuff.Infrastructure", "src\Prometheus.MovieBuff.Infrastructure\Prometheus.MovieBuff.Infrastructure.csproj", "{9213820C-2107-46A9-AEA2-CBF414DC8581}"
