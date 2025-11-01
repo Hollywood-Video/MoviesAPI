@@ -26,6 +26,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{D5B6461F-3
 		docs\README.md = docs\README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prometheus.MovieBuff.Infrastructure", "src\Prometheus.MovieBuff.Infrastructure\Prometheus.MovieBuff.Infrastructure.csproj", "{9213820C-2107-46A9-AEA2-CBF414DC8581}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,7 @@ Global
 		{F10FBC1D-3B28-4A98-A227-7F6A204F2088} = {29A79FD6-04E4-41D7-88A4-FF0FADA67946}
 		{B9B6E500-81E6-48B0-8D68-91D55D39C11F} = {29A79FD6-04E4-41D7-88A4-FF0FADA67946}
 		{E4D99B57-507C-42EF-94CE-6C5E38B73930} = {29A79FD6-04E4-41D7-88A4-FF0FADA67946}
+		{9213820C-2107-46A9-AEA2-CBF414DC8581} = {29A79FD6-04E4-41D7-88A4-FF0FADA67946}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{65B33566-D825-4151-99ED-27D8F536D9D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -57,5 +60,9 @@ Global
 		{E4D99B57-507C-42EF-94CE-6C5E38B73930}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4D99B57-507C-42EF-94CE-6C5E38B73930}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4D99B57-507C-42EF-94CE-6C5E38B73930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9213820C-2107-46A9-AEA2-CBF414DC8581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9213820C-2107-46A9-AEA2-CBF414DC8581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9213820C-2107-46A9-AEA2-CBF414DC8581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9213820C-2107-46A9-AEA2-CBF414DC8581}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
