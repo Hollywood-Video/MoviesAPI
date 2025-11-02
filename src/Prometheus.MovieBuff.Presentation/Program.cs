@@ -32,6 +32,9 @@ public class Program
         // Adds middleware for redirecting HTTP Requests to HTTPS. 
         app.UseHttpsRedirection();
         
+        // Sets the path base to "api/movie-svc" so that all endpoints are prefixed with this path.
+        app.UsePathBase("/api/movie-svc");
+        
         // Maps endpoints
         app.MapCreateMovieEndpoint();
         
