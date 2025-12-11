@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-
-namespace Prometheus.MovieBuff.Presentation.Features.Movies.CreateMovie.v1;
+﻿namespace Prometheus.MovieBuff.Presentation.Features.Movies.CreateMovie.v1;
 
 internal static class CreateMovieEndpoint
 {

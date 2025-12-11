@@ -1,6 +1,8 @@
 using Prometheus.MovieBuff.Presentation.Features.Movies.CreateMovie.v1;
+using Prometheus.MovieBuff.Presentation.Features.Movies.GetMovies.v1;
 using Scalar.AspNetCore;
 using Serilog;
+using Serilog.Sinks.SystemConsole.Themes;
 
 namespace Prometheus.MovieBuff.Presentation;
 
@@ -10,9 +12,13 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        // Configure Serilog programmatically (reads config and ensures console sink with theme)
         builder.Host.UseSerilog((context, configuration) =>
         {
-            configuration.ReadFrom.Configuration(context.Configuration);
+            configuration
+                .ReadFrom.Configuration(context.Configuration)
+                .Enrich.FromLogContext()
+                .WriteTo.Console(theme: AnsiConsoleTheme.Literate);
         });
 
         builder.Services.AddEndpointsApiExplorer();
@@ -24,6 +30,7 @@ public class Program
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {
+            app.Logger.LogInformation("Application is running in Development mode.");
             app.MapOpenApi();
             // --- 👇 Add Scalar UI (the modern Swagger alternative) ---
             app.MapScalarApiReference(options =>
@@ -45,6 +52,9 @@ public class Program
         
         // Maps endpoints
         app.MapCreateMovieEndpoint();
+        app.MapGetMoviesEndpoint();
+        
+        app.Logger.LogInformation("Application has started.");
         
         await app.RunAsync();
     }
