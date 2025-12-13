@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.HttpOverrides;
 using Prometheus.MovieBuff.Presentation.Features.Movies.CreateMovie.v1;
 using Prometheus.MovieBuff.Presentation.Features.Movies.GetMovies.v1;
 using Scalar.AspNetCore;
@@ -26,6 +27,11 @@ public class Program
         builder.Services.AddOpenApi();
 
         var app = builder.Build();
+        
+        app.UseForwardedHeaders(new ForwardedHeadersOptions
+        {
+            ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+        });
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
