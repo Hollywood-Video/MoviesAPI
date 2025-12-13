@@ -38,6 +38,7 @@ public class Program
                 options.Title = "🎬 MovieBuff API";
                 options.Theme = ScalarTheme.BluePlanet;
                 options.DarkMode = true;
+                options.WithBaseServerUrl("/api/movie-svc");
             });
         }
         
