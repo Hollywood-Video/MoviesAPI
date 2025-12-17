@@ -44,7 +44,7 @@ public class Program
                 options.Title = "🎬 MovieBuff API";
                 options.Theme = ScalarTheme.BluePlanet;
                 options.DarkMode = true;
-                options.WithBaseServerUrl("/api/movie-svc");
+                options.WithBaseServerUrl("/movie-svc");
             });
         }
         
@@ -54,8 +54,8 @@ public class Program
         // Adds middleware for redirecting HTTP Requests to HTTPS. 
         app.UseHttpsRedirection();
         
-        // Sets the path base to "api/movie-svc" so that all endpoints are prefixed with this path.
-        app.UsePathBase("/api/movie-svc");
+        // Sets the path base to "movie-svc" so that all endpoints are prefixed with this path.
+        app.UsePathBase("/movie-svc");
         
         // Maps endpoints
         app.MapCreateMovieEndpoint();
