@@ -1,0 +1,33 @@
+name: Create Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Log release context
+        run: |
+          echo "🚀 Release triggered"
+          echo "Actor: $GITHUB_ACTOR"
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "Workflow: $GITHUB_WORKFLOW"
+          echo "Run ID: $GITHUB_RUN_ID"
+          echo "Tag: ${{ github.event.release.tag_name }}"
+          echo "Commit: $GITHUB_SHA"
+          echo "Pre-release: ${{ github.event.release.prerelease }}"
+          echo "Release URL: ${{ github.event.release.html_url }}"
+
+      - name: Confirm Creation of Release
+        run: |
+          echo "Release triggered by: $GITHUB_ACTOR"
+
+      - uses: actions/checkout@v4
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
