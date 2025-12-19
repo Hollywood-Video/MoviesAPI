@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Prometheus.MovieBuff.Presentation.Features.Movies.CreateMovie.v1;
+namespace Cinedex.Web.Features.Movies.CreateMovie.v1;
 
 public class CreateMovieRequest
 {

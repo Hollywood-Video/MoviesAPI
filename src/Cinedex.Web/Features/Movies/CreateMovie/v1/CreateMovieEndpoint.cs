@@ -1,4 +1,4 @@
-﻿namespace Prometheus.MovieBuff.Presentation.Features.Movies.CreateMovie.v1;
+﻿namespace Cinedex.Web.Features.Movies.CreateMovie.v1;
 
 internal static class CreateMovieEndpoint
 {

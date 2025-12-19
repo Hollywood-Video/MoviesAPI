@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Prometheus.MovieBuff.Application\Prometheus.MovieBuff.Application.csproj" />
+      <ProjectReference Include="..\Cinedex.Application\Cinedex.Application.csproj" />
     </ItemGroup>
 
 </Project>

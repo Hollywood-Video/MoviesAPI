@@ -1,4 +1,4 @@
-﻿namespace Prometheus.MovieBuff.Presentation.Features.Movies.GetMovies.v1;
+﻿namespace Cinedex.Web.Features.Movies.GetMovies.v1;
 
 internal static class GetMoviesEndpoint
 {

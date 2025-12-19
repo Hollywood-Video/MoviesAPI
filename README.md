@@ -1,25 +1,25 @@
-# 🎬 MovieBuff
+# 🎬 Cinedex
 
-**MovieBuff** is a modern ASP.NET Core REST API that lets users explore, search, and manage movie data — inspired by platforms like IMDb and TMDb.  
+**Cinedex** is a modern ASP.NET Core REST API that lets users explore, search, and manage movie data — inspired by platforms like IMDb and TMDb.  
 It’s built with **Clean Architecture** and **Domain-Driven Design (DDD)** principles, focusing on scalability, maintainability, and clean separation of concerns.
 
 ---
 
 ## 🧩 Architecture Overview
 
-MovieBuff follows a **Classic Clean Architecture** approach:
+Cinedex follows a **Classic Clean Architecture** approach:
 
 ```
-MovieBuff.sln
+Cinedex.sln
 ├── src/
-│   ├── Prometheus.MovieBuff.Domain/                 # Entities, Value Objects, Domain Events
-│   ├── Prometheus.MovieBuff.Application/            # Use Cases, Commands, Queries, Validation
-│   ├── Prometheus.MovieBuff.Application.Abstractions/ # Public Contracts and Shared Interfaces
-│   ├── Prometheus.MovieBuff.Infrastructure/         # EF Core, Repositories, Caching, Auth, etc.
-│   └── Prometheus.MovieBuff.Presentation/                 # REST Controllers / Endpoints
+│   ├── Cinedex.Domain/                 # Entities, Value Objects, Domain Events
+│   ├── Cinedex.Application/            # Use Cases, Commands, Queries, Validation
+│   ├── Cinedex.Application.Abstractions/ # Public Contracts and Shared Interfaces
+│   ├── Cinedex.Infrastructure/         # EF Core, Repositories, Caching, Auth, etc.
+│   └── Cinedex.Presentation/                 # REST Controllers / Endpoints
 └── tests/
-    ├── MovieBuff.UnitTests/
-    └── MovieBuff.IntegrationTests/
+    ├── Cinedex.UnitTests/
+    └── Cinedex.IntegrationTests/
 ```
 
 ### Dependency Flow

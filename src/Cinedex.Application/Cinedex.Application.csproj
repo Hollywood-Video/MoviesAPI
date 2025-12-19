@@ -7,7 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Prometheus.MovieBuff.Application.Abstractions\Prometheus.MovieBuff.Application.Abstractions.csproj" />
+      <ProjectReference Include="..\Cinedex.Application.Abstractions\Cinedex.Application.Abstractions.csproj" />
+      <ProjectReference Include="..\Cinedex.Infrastructure\Cinedex.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

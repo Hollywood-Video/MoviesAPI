@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.HttpOverrides;
-using Prometheus.MovieBuff.Presentation.Features.Movies.CreateMovie.v1;
-using Prometheus.MovieBuff.Presentation.Features.Movies.GetMovies.v1;
+using Cinedex.Web.Features.Movies.CreateMovie.v1;
+using Cinedex.Web.Features.Movies.GetMovies.v1;
 using Scalar.AspNetCore;
 using Serilog;
 using Serilog.Sinks.SystemConsole.Themes;
 
-namespace Prometheus.MovieBuff.Presentation;
+namespace Cinedex.Web;
 
 public class Program
 {
